@@ -15,7 +15,7 @@ Update system packages and pull the repository:
 bash
 CopyEdit
 sudo apt update && sudo apt upgrade
-git clone https://github.com/N4si/DevSecOps-Project.git
+
 Docker Installation & App Containerization:
 Install Docker:
 bash
@@ -105,7 +105,7 @@ pipeline {
             steps { cleanWs() }
         }
         stage('Checkout') {
-            steps { git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git' }
+            steps { git branch: 'main' }
         }
         stage('Code Analysis') {
             steps {
